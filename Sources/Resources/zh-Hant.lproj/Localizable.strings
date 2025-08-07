@@ -1,0 +1,50 @@
+/* 
+  Localizable.strings
+  SymbolKit
+
+  Created by xxs on 2025/8/6.
+  
+*/
+
+"Symobl.Category.all" = "全部";
+"Symobl.Category.whatsnew" = "新符號";
+"Symobl.Category.multicolor" = "多色";
+"Symobl.Category.variablecolor" = "可變顏色";
+"Symobl.Category.communication" = "通信";
+"Symobl.Category.weather" = "天氣";
+"Symobl.Category.maps" = "地圖";
+"Symobl.Category.objectsandtools" = "物體與工具";
+"Symobl.Category.devices" = "設備";
+"Symobl.Category.cameraandphotos" = "相機與照片";
+"Symobl.Category.gaming" = "遊戲";
+"Symobl.Category.connectivity" = "連接狀態";
+"Symobl.Category.transportation" = "交通";
+"Symobl.Category.automotive" = "汽車";
+"Symobl.Category.accessibility" = "輔助功能";
+"Symobl.Category.privacyandsecurity" = "隱私與安全性";
+"Symobl.Category.human" = "人";
+"Symobl.Category.home" = "家庭";
+"Symobl.Category.fitness" = "健身";
+"Symobl.Category.nature" = "自然";
+"Symobl.Category.editing" = "編輯";
+"Symobl.Category.textformatting" = "文本格式化";
+"Symobl.Category.media" = "媒體";
+"Symobl.Category.keyboard" = "鍵盤";
+"Symobl.Category.commerce" = "商業";
+"Symobl.Category.time" = "時間";
+"Symobl.Category.health" = "健康";
+"Symobl.Category.shapes" = "形狀";
+"Symobl.Category.arrows" = "箭頭";
+"Symobl.Category.indices" = "索引";
+"Symobl.Category.math" = "數學";
+
+"Emoji.Category.symbol" = "符號";
+"Emoji.Category.emotion" = "情緒";
+"Emoji.Category.activities" = "活動";
+"Emoji.Category.body" = "人";
+"Emoji.Category.objects" = "物體";
+"Emoji.Category.animals" = "動物";
+"Emoji.Category.travel" = "旅行";
+"Emoji.Category.flags" = "旗幟";
+"Emoji.Category.food" = "食物";
+"Emoji.Category.other" = "其他";

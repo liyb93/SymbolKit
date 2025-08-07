@@ -1,0 +1,50 @@
+/* 
+  Localizable.strings
+  SymbolKit
+
+  Created by xxs on 2025/8/6.
+  
+*/
+
+"Symobl.Category.all" = "All";
+"Symobl.Category.whatsnew" = "What’s New";
+"Symobl.Category.multicolor" = "Multicolor";
+"Symobl.Category.variablecolor" = "Variable Color";
+"Symobl.Category.communication" = "Communication";
+"Symobl.Category.weather" = "Weather";
+"Symobl.Category.maps" = "Maps";
+"Symobl.Category.objectsandtools" = "Objects & Tools";
+"Symobl.Category.devices" = "Devices";
+"Symobl.Category.cameraandphotos" = "Camera & Photos";
+"Symobl.Category.gaming" = "Gaming";
+"Symobl.Category.connectivity" = "Connectivity";
+"Symobl.Category.transportation" = "Transportation";
+"Symobl.Category.automotive" = "Automotive";
+"Symobl.Category.accessibility" = "Accessibility";
+"Symobl.Category.privacyandsecurity" = "Privacy & Security";
+"Symobl.Category.human" = "Human";
+"Symobl.Category.home" = "Home";
+"Symobl.Category.fitness" = "Fitness";
+"Symobl.Category.nature" = "Nature";
+"Symobl.Category.editing" = "Editing";
+"Symobl.Category.textformatting" = "Text Formatting";
+"Symobl.Category.media" = "Media";
+"Symobl.Category.keyboard" = "Keyboard";
+"Symobl.Category.commerce" = "Commerce";
+"Symobl.Category.time" = "Time";
+"Symobl.Category.health" = "Health";
+"Symobl.Category.shapes" = "Shapes";
+"Symobl.Category.arrows" = "Arrows";
+"Symobl.Category.indices" = "Indices";
+"Symobl.Category.math" = "Math";
+
+"Emoji.Category.symbol" = "Symbols";
+"Emoji.Category.emotion" = "Smileys & Emotion";
+"Emoji.Category.activities" = "Activities";
+"Emoji.Category.body" = "People & Body";
+"Emoji.Category.objects" = "Objects";
+"Emoji.Category.animals" = "Animals & Nature";
+"Emoji.Category.travel" = "Travel & Places";
+"Emoji.Category.flags" = "Flags";
+"Emoji.Category.food" = "Food & Drink";
+"Emoji.Category.other" = "Other";
