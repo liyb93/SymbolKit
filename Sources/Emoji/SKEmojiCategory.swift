@@ -8,7 +8,6 @@
 import Foundation
 
 public enum SKEmojiCategory: String, CaseIterable, Codable, Sendable {
-    case symbol
     case emotion
     case activities
     case body
@@ -17,6 +16,7 @@ public enum SKEmojiCategory: String, CaseIterable, Codable, Sendable {
     case travel
     case flags
     case food
+    case symbol
     case other
 }
 
