@@ -53,13 +53,13 @@ extension SKSymbolCategory {
         case .all: return .squareGrid2X2
         case .whatsnew: return .sparkles
         case .multicolor:
-            if #available(iOS 14.0, *) {
+            if #available(iOS 14.0, macOS 11.0, tvOS 14.0, visionOS 1.0, watchOS 7.0, *) {
                 return .paintpalette
             } else {
                 return .pencilTip
             }
         case .variablecolor:
-            if #available(iOS 16.0, *) {
+            if #available(iOS 16.0, macOS 13.0, tvOS 16.0, watchOS 9.0, visionOS 1.0, *) {
                 return .sliderHorizontalBelowSquareAndSquareFilled
             } else {
                 return .pencilTipCropCircleBadgePlus
@@ -74,13 +74,13 @@ extension SKSymbolCategory {
         case .connectivity: return .antennaRadiowavesLeftAndRight
         case .transportation: return .carFill
         case .automotive:
-            if #available(iOS 16.1, *) {
+            if #available(iOS 16.1, macOS 13.0, tvOS 16.1, watchOS 9.1, visionOS 1.0, *) {
                 return .steeringwheel
             } else {
                 return .carFill
             }
         case .accessibility:
-            if #available(iOS 17.0, *) {
+            if #available(iOS 17.0, macOS 14.0, tvOS 17.0, watchOS 10.0, visionOS 1.0, *) {
                 return .accessibility
             } else {
                 return .teletype
@@ -89,13 +89,13 @@ extension SKSymbolCategory {
         case .human: return .personCropCircle
         case .home: return .house
         case .fitness:
-            if #available(iOS 16.0, *) {
+            if #available(iOS 16.0, macOS 13.0, tvOS 16.0, watchOS 9.0, visionOS 1.0, *) {
                 return .figureRun
             } else {
                 return .person
             }
         case .nature:
-            if #available(iOS 14.0, *) {
+            if #available(iOS 14.0, macOS 11.0, tvOS 14.0, visionOS 1.0, watchOS 7.0, *) {
                 return .leaf
             } else {
                 return .sunHaze
@@ -109,7 +109,7 @@ extension SKSymbolCategory {
         case .health: return .heart
         case .shapes: return .squareOnCircle
         case .arrows:
-            if #available(iOS 14.0, *) {
+            if #available(iOS 14.0, macOS 11.0, tvOS 14.0, visionOS 1.0, watchOS 7.0, *) {
                 return .arrowForward
             } else {
                 return .arrowRight
