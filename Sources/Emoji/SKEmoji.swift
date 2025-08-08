@@ -7,7 +7,7 @@
 
 import Foundation
 
-public struct SKEmoji: Codable, Sendable {
+public struct SKEmoji: Codable, Sendable, Hashable {
     var emoji: String = ""
     var name: String = ""
     var category: SKEmojiCategory = .activities

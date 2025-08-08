@@ -8,7 +8,7 @@ import Foundation
 import SwiftUI
 
 // MARK: - SF Symbols
-public struct SKSymbol: Codable, Sendable, Equatable {
+public struct SKSymbol: Codable, Sendable, Equatable, Hashable {
     public var rawValue: String
     public var categories: [SKSymbolCategory] = []
     public var words: [String] = []
