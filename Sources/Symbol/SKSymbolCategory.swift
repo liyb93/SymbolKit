@@ -120,6 +120,7 @@ extension SKSymbolCategory {
     }
 
     public var symbols: [SKSymbol] {
+        guard self != .all else { return SKSymbol.allCases }
         return SKSymbol.allCases.filter { $0.categories.contains(self) }
     }
 }

@@ -1921,14 +1921,24 @@ extension SKEmoji {
         ]
     }
 
-    public static func search(_ keyword: String) -> [SKEmoji] {
+    public static func search(_ keyword: String, category: SKEmojiCategory = .all) -> [SKEmoji] {
         allCases.filter { emoji in
-            if emoji.name.contains(keyword) {
-                return true
-            } else if emoji.emoji.contains(keyword) {
-                return true
-            } else if emoji.category.rawValue.contains(keyword) {
-                return true
+            if category != .all, emoji.category == category {
+                if emoji.name.contains(keyword) {
+                    return true
+                } else if emoji.emoji.contains(keyword) {
+                    return true
+                } else if emoji.category.rawValue.contains(keyword) {
+                    return true
+                }
+            } else {
+                if emoji.name.contains(keyword) {
+                    return true
+                } else if emoji.emoji.contains(keyword) {
+                    return true
+                } else if emoji.category.rawValue.contains(keyword) {
+                    return true
+                }
             }
             return false
         }

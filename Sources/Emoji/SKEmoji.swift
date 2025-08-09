@@ -14,10 +14,10 @@ public struct SKEmoji: Codable, Sendable, Hashable {
 }
 
 extension SKEmoji {
-    public static let redHair = SKEmoji(emoji: "🦰", name: "red hair", category: .other)
-    public static let curlyHair = SKEmoji(emoji: "🦱", name: "curly hair", category: .other)
-    public static let whiteHair = SKEmoji(emoji: "🦳", name: "white hair", category: .other)
-    public static let bald = SKEmoji(emoji: "🦲", name: "bald", category: .other)
+    public static let redHair = SKEmoji(emoji: "🦰", name: "red hair", category: .body)
+    public static let curlyHair = SKEmoji(emoji: "🦱", name: "curly hair", category: .body)
+    public static let whiteHair = SKEmoji(emoji: "🦳", name: "white hair", category: .body)
+    public static let bald = SKEmoji(emoji: "🦲", name: "bald", category: .body)
     public static let jackOLantern = SKEmoji(emoji: "🎃", name: "jack-o-lantern", category: .activities)
     public static let christmasTree = SKEmoji(emoji: "🎄", name: "Christmas tree", category: .activities)
     public static let fireworks = SKEmoji(emoji: "🎆", name: "fireworks", category: .activities)

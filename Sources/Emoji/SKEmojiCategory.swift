@@ -8,6 +8,7 @@
 import Foundation
 
 public enum SKEmojiCategory: String, CaseIterable, Codable, Sendable {
+    case all
     case emotion
     case activities
     case body
@@ -17,7 +18,6 @@ public enum SKEmojiCategory: String, CaseIterable, Codable, Sendable {
     case flags
     case food
     case symbol
-    case other
 }
 
 extension SKEmojiCategory {
@@ -28,6 +28,7 @@ extension SKEmojiCategory {
 
     public var displayEmoji: String {
         switch self {
+        case .all: "✨"
         case .symbol: "💱"
         case .emotion: "🥰"
         case .activities: "🎯"
@@ -37,11 +38,11 @@ extension SKEmojiCategory {
         case .travel: "🏬"
         case .flags: "🇨🇳"
         case .food: "🍞"
-        case .other: "🦰"
         }
     }
 
     public var emojis: [SKEmoji] {
+        guard self != .all else { return SKEmoji.allCases }
         return SKEmoji.allCases.filter { $0.category == self }
     }
 }

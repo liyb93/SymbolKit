@@ -91,23 +91,44 @@ extension SKSymbol {
         return symbols
     }
 
-    public static func search(_ keyword: String) -> [SKSymbol] {
+    public static func search(_ keyword: String, category: SKSymbolCategory = .all) -> [SKSymbol] {
         allCases.filter { symbol in
-            if symbol.rawValue.contains(keyword) {
-                return true
-            } else if symbol.words.contains(keyword) {
-                return true
-            } else {
-                let result = symbol.categories.contains { category in
-                    if category.displayName.contains(keyword) {
+            if category != .all {
+                if symbol.categories.contains(category) {
+                    if symbol.rawValue.contains(keyword) {
                         return true
-                    } else if category.rawValue.contains(keyword) {
+                    } else if symbol.words.contains(keyword) {
                         return true
+                    } else {
+                        let result = symbol.categories.contains { category in
+                            if category.displayName.contains(keyword) {
+                                return true
+                            } else if category.rawValue.contains(keyword) {
+                                return true
+                            }
+                            return false
+                        }
+                        return result
                     }
-                    return false
                 }
-                return result
+            } else {
+                if symbol.rawValue.contains(keyword) {
+                    return true
+                } else if symbol.words.contains(keyword) {
+                    return true
+                } else {
+                    let result = symbol.categories.contains { category in
+                        if category.displayName.contains(keyword) {
+                            return true
+                        } else if category.rawValue.contains(keyword) {
+                            return true
+                        }
+                        return false
+                    }
+                    return result
+                }
             }
+            return false
         }
     }
 }
